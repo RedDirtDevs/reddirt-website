@@ -55,9 +55,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <!-- endreplace-->
 
   <style is="custom-style">
-  paper-toolbar {
-    --paper-toolbar-background: #FFF; /* changes the background to blue*/
-    /*--paper-toolbar-color: #0f0;  changes the foreground color to green */
+    paper-toolbar {
+      --paper-toolbar-background: #ce2700; /* changes the background to blue*/
+      /*--paper-toolbar-color: #0f0;  changes the foreground color to green */
     
   }
 </style>
@@ -77,8 +77,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <paper-scroll-header-panel drawer fixed> <!-- sidebar -->
         
         <!-- sidebar toolbar -->
-        <paper-toolbar id="drawerToolbar">
-          <img width="80%" src="images/RDD-logo-cropped.png">
+        <paper-toolbar>
+          <img height="95%" src="images/RDD-logo-cropped-red-bg.png">
         </paper-toolbar>
 
         <!-- sidebar content -->
@@ -89,9 +89,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <span>Home</span>
           </a>
 
-          <a data-route="users" href="/users"> <!-- user page -->
+          <a data-route="news" href="/"> <!-- user page -->
             <iron-icon icon="info"></iron-icon>
-            <span>Users</span>
+            <span>news</span>
           </a>
 
           <a data-route="contact" href="/contact"> <!-- contact page -->
@@ -108,7 +108,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 
       <paper-scroll-header-panel main condenses keep-condensed-header>
-        <div class="content">
+        <paper-toolbar id="mainToolbar" class="tall">
+          <div class="middle middle-container center horizontal layout">
+            <div class="app-name">Red Dirt Developers</div>
+          </div>
+        </paper-toolbar>
+
+
+
+
+        <div class="content"><!-- Page selection -->
           <iron-pages attr-for-selected="data-route" selected="{{route}}"> <!-- Page selection -->
             
             <section data-route="home">
@@ -117,20 +126,20 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               </paper-material>
             </section>
 
-            <section data-route="users">
+            <section data-route="news">
               <paper-material elevation="4">
-                <span>users</span>
+                <span>news</span>
               </paper-material>
             </section>
 
-            <section data-route="user-info">
+<!--             <section data-route="user-info">
               <paper-material elevation="1">
                 <h2 class="paper-font-display2">
                 User:<span>{{params.name}}</span>
                 </h2>
                 <div>This is <span>{{params.name}}</span>'s section</div>
               </paper-material>
-            </section>
+            </section> -->
 
             <section data-route="contact">
               <paper-material elevation="1">
