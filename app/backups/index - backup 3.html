@@ -48,32 +48,6 @@
   <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
   <!-- endbuild -->
 
-
-
-
-
-  <!-- Google Elements IMPORTS -->
-  <link href="bower_components/iron-icons/iron-icons.html" rel="import">
-
-  <link href="bower_components/polymer/polymer.html" rel="import">
-  <link href="bower_components/paper-drawer-panel/paper-drawer-panel.html" rel="import">
-  <!-- <link href="bower_components\paper-header-panel\paper-header-panel.html" rel="import"> -->
-  <link href="bower_components/paper-toolbar/paper-toolbar.html" rel="import">
-  <link href="bower_components/paper-icon-button/paper-icon-button.html" rel="import">
-  <link href="bower_components/paper-material/paper-material.html" rel="import">
-  <link href="bower_components/paper-menu/paper-menu.html" rel="import"> 
-  <link href="bower_components/paper-item/paper-item.html" rel="import">
-  <link href="bower_components/paper-input/paper-input.html" rel="import">
-  <link href="bower_components/iron-icons/iron-icons.html" rel="import">
-  <link href="bower_components\paper-fab\paper-fab.html" rel="import">
-  <link href="bower_components\paper-button\paper-button.html" rel="import">
-
-
-  <!-- Google ElementsIMPORTS -->
-
-
-
-
   <!-- will be replaced with elements/elements.vulcanized.html -->
   <link rel="import" href="elements/elements.html">
   <!-- endreplace-->
@@ -86,13 +60,9 @@
   <link rel="stylesheet" href="webfiles/portfolio-theme.css">
 
     <style type="text/css">
-        /*div {
+/*        div {
           outline: 1px solid black;
-        }
-*/
-        paper-toolbar {
-          background: #ce2700;
-        }
+        }*/
     </style>
 
 <!-- CUSTOM -->
@@ -111,16 +81,20 @@
 
 
       <paper-header-panel main>
-        <paper-toolbar style="background:#ce2700">
-          <div class="flex"><b>Red Dirt Devs</b></div>
-          <paper-icon-button id="paperToggle" icon="cloud-upload" paper-drawer-toggle></paper-icon-button>
-          <paper-icon-button id="paperToggle" icon="favorite" paper-drawer-toggle></paper-icon-button>
-
+        <paper-toolbar>
+          <div class="flex">Red Dirt Devs</div>
         </paper-toolbar>
       </paper-header-panel>
 
 
     <div class="row">
+
+      <!-- <paper-toolbar class="tall">
+      <paper-icon-button icon="menu"></paper-icon-button>
+      <div class="middle title">Middle Title</div>
+      <div class="bottom title">Bottom Title</div>
+    </paper-toolbar> -->
+
         <div class="small-12 medium-4 large-6 columns namelogo">
             <h1>Red Dirt Devs</h1>
         </div>
@@ -193,7 +167,7 @@
     <div class="row contact">
         <hr>
         <div class="large-12 columns">
-            <h4>Contact Us</h4>
+            <h4>Contact Me</h4>
             <div class="large-6 columns">
                 <strong>Email</strong>: contact@reddirtdevs.com
             </div>
