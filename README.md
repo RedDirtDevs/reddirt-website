@@ -1,1 +1,0 @@
-Red Dirt Devs website - version 0.1
