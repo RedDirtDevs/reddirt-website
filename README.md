@@ -1,6 +1,6 @@
 ## Red Dirt Devs
 
-> Web is under construction using Polymer. Be sure to look around and give your thoughts.
+> Website is under construction using Polymer. Be sure to look around and give your thoughts.  To install, you will need to follow the instructions seen below.  We're using you'll need NodeJS, NPM, Bower, and Gulp all install globally to get started.
 
 ![](https://cloud.githubusercontent.com/assets/110953/7877439/6a69d03e-0590-11e5-9fac-c614246606de.png)
 ## Polymer Starter Kit
