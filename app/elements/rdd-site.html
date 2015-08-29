@@ -48,22 +48,22 @@
         }
 
         /* unvisited link */
-        a:link {
+        .different:link {
             color: #FFFFFF;
         }
 
         /* visited link */
-        a:visited {
+        .different:visited {
             color: #FFFFFF;
         }
 
         /* mouse over link */
-        a:hover {
+        .different:hover {
             color: #FFFFFF;
         }
 
         /* selected link */
-        a:active {
+        .different:active {
             color: #FFFFFF;
         }
   </style>
@@ -72,7 +72,7 @@
     <!-- local DOM for your element -->
       <paper-header-panel main style="position:fixed;z-index:999;width:100vw">
         <paper-toolbar style="background:#ce2700">
-          <div class="flex"><a href="#"><b>Red Dirt Devs</b></a></div>
+          <div class="flex"><a class="different" href="#"><b>Red Dirt Devs</b></a></div>
           <paper-icon-button id="paperToggle" icon="menu" on-tap="{{menuAction}}" paper-drawer-toggle></paper-icon-button>
         </paper-toolbar>
       </paper-header-panel>
