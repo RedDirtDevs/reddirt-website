@@ -40,213 +40,21 @@
   <!-- Tile icon for Win8 (144x144) -->
   <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
 
-  <!-- build:css styles/main.css -->
-  <link rel="stylesheet" href="styles/main.css">
-  <!-- endbuild-->
-
-  <!-- build:js bower_components/webcomponentsjs/webcomponents-lite.min.js -->
-  <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
-  <!-- endbuild -->
-
-
-
-
-
-  <!-- Google Elements IMPORTS -->
-  <link href="bower_components/iron-icons/iron-icons.html" rel="import">
-
-  <link href="bower_components/polymer/polymer.html" rel="import">
-  <link href="bower_components/paper-drawer-panel/paper-drawer-panel.html" rel="import">
-  <!-- <link href="bower_components\paper-header-panel\paper-header-panel.html" rel="import"> -->
-  <link href="bower_components/paper-toolbar/paper-toolbar.html" rel="import">
-  <link href="bower_components/paper-icon-button/paper-icon-button.html" rel="import">
-  <link href="bower_components/paper-material/paper-material.html" rel="import">
-  <link href="bower_components/paper-menu/paper-menu.html" rel="import"> 
-  <link href="bower_components/paper-item/paper-item.html" rel="import">
-  <link href="bower_components/paper-input/paper-input.html" rel="import">
-  <link href="bower_components/iron-icons/iron-icons.html" rel="import">
-  <link href="bower_components\paper-fab\paper-fab.html" rel="import">
-  <link href="bower_components\paper-button\paper-button.html" rel="import">
-
+  <!-- Import Polymer Element -->
   <link rel="import" href="elements/rdd-site.html">
-  <!-- Google ElementsIMPORTS -->
-
-
-
-
-  <!-- will be replaced with elements/elements.vulcanized.html -->
-  <link rel="import" href="elements/elements.html">
-  <!-- endreplace-->
-
-<!-- CUSTOM -->
-
-  <script src="./webfiles/modernizr.js"></script>
-
-  <link rel="stylesheet" href="webfiles/foundation2.css">
-  <link rel="stylesheet" href="webfiles/portfolio-theme.css">
-
-    <style type="text/css">
-/*        div {
-          outline: 1px solid black;
-        }*/
-
-        paper-toolbar {
-          background: #ce2700;
-        }
-
-        .lets-pad li {
-          padding: 10px;
-        }
-    </style>
-
-<!-- CUSTOM -->
+  <!-- Import Polymer Element -->
 
 </head>
 
 <body unresolved class="fullbleed layout vertical">
 
-<!-- CUSTOM -->
-  <link href="./webfiles/foundation.css" rel="stylesheet" type="text/css">
-  <link href="./webfiles/foundation1.css" rel="stylesheet" type="text/css">
-<!-- CUSTOM -->
-
   <span id="browser-sync-binding"></span>
   <template is="dom-bind" id="app">
 
-
-      
-<!--       <paper-header-panel main style="position:fixed;z-index:999;width:100vw">
-        <paper-toolbar style="background:#ce2700">
-          <div class="flex"><b>Red Dirt Devs</b></div>
-          <paper-icon-button id="paperToggle" icon="menu" on-tap="{{menuAction}}" paper-drawer-toggle></paper-icon-button>
-        </paper-toolbar>
-      </paper-header-panel> -->
-
-
-<rdd-site></rdd-site>
-
-<!--     <div class="hero">
-        <div class="row">
-            <div class="large-12 columns intro-text" style="height:960px">
-                <br><br><br><br><br>
-                <p>Bring your ideas to life.</p>
-
-
-            </div>
-        </div>
-    </div> -->
-
-<!-- About -->
-
-<!--     <div class="row about">
-      <a name="about"></a>
-        <div class="medium-6 large-8 columns">
-            <h4>About</h4>
-            <p>In OKC, there are development groups and entrepreneurial groups, but never has there been a group to mix the two. Our OKCoders group is meant to do just that and to work with OU's Center for the Creation of Economic Wealth (CCEW) as well as the Oklahoma City Chamber of Commerce. In fact, this group has been founded by the CCEW's OKCoders class alumni to try and keep the original OKCoder's vision alive.
-            <br><br>
-            We have two primary goals. We plan to help train and build resume material for our members through community outreach projects for nonprofits in our area. Also, we will continue the goals of the original OKCoders group by blending the entrepreneurial groups with the development groups in the local community, allowing ideas to be created and built just as fast as we can come up with them.</p>
-        </div>
-        <div class="medium-6 large-4 columns">
-            <img src="./webfiles/portfolio5.png">
-        </div>
-    </div> -->
-
-
-
-<!-- /About -->
-<!-- Work -->
-
-<!--     <div class="row work">
-        <hr>
-        <div class="large-12 columns">
-            <ul class="clearing-thumbs small-block-grid-1 medium-block-grid-2 large-block-grid-4 lets-pad" data-clearing="">
-                <li>
-                    <a href="images/startups.jpg"><img data-caption="caption here" src="images/startups.jpg">
-                    </a>
-                </li>
-                <li>
-                    <a href="images/jobs.jpg"><img data-caption="caption 2 here..." src="images/jobs.jpg">
-                    </a>
-                </li>
-                <li>
-                    <a href="images/events.jpg"><img data-caption="caption 3 here..." src="images/events.jpg">
-                    </a>
-                </li>
-                <li>
-                    <a href="images/news.jpg"><img data-caption="caption 4 here..." src="images/news.jpg">
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div> -->
-
-<!-- /Work -->
-<!-- Contact -->
-
-<!--     <div class="row contact">
-        <hr>
-        <div class="large-12 columns">
-            <h4>Contact Us</h4>
-            <div class="large-4 columns">
-                <strong>Email</strong>: contact@reddirtdevs.com
-            </div>
-            <div class="large-4 columns">
-                <strong>Twitter</strong>: <a href="https://twitter.com/RedDirtDevs">@RedDirtDevs</a>
-            </div>
-
-        </div>
-    </div> -->
-
-<!-- /Contact -->
-<!-- Footer -->
-
-<!--     <footer class="row">
-        <div class="large-12 columns">
-            <div class="row">
-                <div class=" large-offset-10 large-2 columns">
-                    <br>
-                    <p>© Red Dirt Devs.</p>
-                </div>
-            </div>
-        </div>
-    </footer> -->
-
-<!-- /Footer -->
-
+  <rdd-site></rdd-site>
 
   </template>
 
-
-
-
-    <script>
-        document.write('<script src=' +
-            ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
-            '.js><\/script>')
-    </script>
-    <script src="./webfiles/zepto.js"></script>
-    <script src="./webfiles/jquery.js"></script>
-    <script src="./webfiles/foundation.min.js"></script>
-    <script src="./webfiles/foundation.js"></script>
-    <script src="./webfiles/foundation.clearing.js"></script>
-    <script>
-        $(document).foundation();
-    </script>
-    <script src="./webfiles/jquery(1).js"></script>
-    <script src="./webfiles/foundation(1).js"></script>
-    <script>
-        $(document).foundation();
-
-        var doc = document.documentElement;
-        doc.setAttribute('data-useragent', navigator.userAgent);
-    </script>
-
-
-
-
-  <!-- build:js scripts/app.js -->
-  <script src="scripts/app.js"></script>
-  <!-- endbuild-->
 </body>
 
 </html>

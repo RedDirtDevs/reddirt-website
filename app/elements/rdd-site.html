@@ -2,20 +2,20 @@
 
 
   <!-- Google Elements IMPORTS -->
-  <link href="bower_components/iron-icons/iron-icons.html" rel="import">
+  <link href="../../bower_components/iron-icons/iron-icons.html" rel="import">
 
-  <link href="bower_components/polymer/polymer.html" rel="import">
-  <link href="bower_components/paper-drawer-panel/paper-drawer-panel.html" rel="import">
-  <!-- <link href="bower_components\paper-header-panel\paper-header-panel.html" rel="import"> -->
-  <link href="bower_components/paper-toolbar/paper-toolbar.html" rel="import">
-  <link href="bower_components/paper-icon-button/paper-icon-button.html" rel="import">
-  <link href="bower_components/paper-material/paper-material.html" rel="import">
-  <link href="bower_components/paper-menu/paper-menu.html" rel="import"> 
-  <link href="bower_components/paper-item/paper-item.html" rel="import">
-  <link href="bower_components/paper-input/paper-input.html" rel="import">
-  <link href="bower_components/iron-icons/iron-icons.html" rel="import">
-  <link href="bower_components/paper-fab/paper-fab.html" rel="import">
-  <link href="bower_components/paper-button/paper-button.html" rel="import">
+  <link href="../../bower_components/polymer/polymer.html" rel="import">
+  <link href="../../bower_components/paper-drawer-panel/paper-drawer-panel.html" rel="import">
+  <!-- <link href="../../bower_components\paper-header-panel\paper-header-panel.html" rel="import"> -->
+  <link href="../../bower_components/paper-toolbar/paper-toolbar.html" rel="import">
+  <link href="../../bower_components/paper-icon-button/paper-icon-button.html" rel="import">
+  <link href="../../bower_components/paper-material/paper-material.html" rel="import">
+  <link href="../../bower_components/paper-menu/paper-menu.html" rel="import"> 
+  <link href="../../bower_components/paper-item/paper-item.html" rel="import">
+  <link href="../../bower_components/paper-input/paper-input.html" rel="import">
+  <link href="../../bower_components/iron-icons/iron-icons.html" rel="import">
+  <link href="../../bower_components/paper-fab/paper-fab.html" rel="import">
+  <link href="../../bower_components/paper-button/paper-button.html" rel="import">
   <!-- Google ElementsIMPORTS -->
 
   <!-- Polymer Link -->
@@ -27,17 +27,12 @@
   <template class=" js flexbox flexboxlegacy canvas canvastext webgl touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)" is="dom-bind" id="app">
   
   <!-- Foundation CSS -->
-    <link rel="stylesheet" href="../webfiles/foundation2.css">
+    
     <link rel="stylesheet" href="../webfiles/portfolio-theme.css">
-    <link href="../webfiles/foundation.css" rel="stylesheet" type="text/css">
     <link href="../webfiles/foundation1.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../css/foundation.min.css">
   <!-- Foundation CSS -->
 
-
-
-  <!-- build:css styles/main.css -->
-  <link rel="stylesheet" href="../styles/main.css">
-  <!-- endbuild-->
 
   <style type="text/css">
 /*        div {
@@ -57,7 +52,7 @@
     <!-- local DOM for your element -->
       <paper-header-panel main style="position:fixed;z-index:999;width:100vw">
         <paper-toolbar style="background:#ce2700">
-          <div class="flex"><b>Red Dirt Devs</b></div>
+          <div class="flex"><a href="#" style:"color:#FFF"><b>Red Dirt Devs</b></a></div>
           <paper-icon-button id="paperToggle" icon="menu" on-tap="{{menuAction}}" paper-drawer-toggle></paper-icon-button>
         </paper-toolbar>
       </paper-header-panel>
@@ -156,14 +151,14 @@
 
     <script>
       Polymer({
-        is: "rdd-site"
+        is: 'rdd-site'
       });
     </script>
 
-    <script src="./webfiles/modernizr.js"></script>
+    <script src="../webfiles/modernizr.js"></script>
 
     <!-- build:js scripts/app.js -->
-    <script src="scripts/app.js"></script>
+    <script src="../scripts/app.js"></script>
     <!-- endbuild-->
 
     <script>
@@ -171,16 +166,16 @@
             ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
             '.js><\/script>')
     </script>
-    <script src="./webfiles/zepto.js"></script>
-    <script src="./webfiles/jquery.js"></script>
-    <script src="./webfiles/foundation.min.js"></script>
-    <script src="./webfiles/foundation.js"></script>
-    <script src="./webfiles/foundation.clearing.js"></script>
+    <script src="../webfiles/zepto.js"></script>
+    <script src="../webfiles/jquery.js"></script>
+    <script src="../webfiles/foundation.min.js"></script>
+    <script src="../webfiles/foundation.js"></script>
+    <script src="../webfiles/foundation.clearing.js"></script>
     <script>
         $(document).foundation();
     </script>
-    <script src="./webfiles/jquery(1).js"></script>
-    <script src="./webfiles/foundation(1).js"></script>
+    <script src="../webfiles/jquery(1).js"></script>
+    <script src="../webfiles/foundation(1).js"></script>
     <script>
         $(document).foundation();
 
