@@ -46,13 +46,33 @@
         .lets-pad li {
           padding: 10px;
         }
+
+        /* unvisited link */
+        a:link {
+            color: #FFFFFF;
+        }
+
+        /* visited link */
+        a:visited {
+            color: #FFFFFF;
+        }
+
+        /* mouse over link */
+        a:hover {
+            color: #FFFFFF;
+        }
+
+        /* selected link */
+        a:active {
+            color: #FFFFFF;
+        }
   </style>
 
 
     <!-- local DOM for your element -->
       <paper-header-panel main style="position:fixed;z-index:999;width:100vw">
         <paper-toolbar style="background:#ce2700">
-          <div class="flex"><a href="#" style:"color:#FFF"><b>Red Dirt Devs</b></a></div>
+          <div class="flex"><a href="#"><b>Red Dirt Devs</b></a></div>
           <paper-icon-button id="paperToggle" icon="menu" on-tap="{{menuAction}}" paper-drawer-toggle></paper-icon-button>
         </paper-toolbar>
       </paper-header-panel>
